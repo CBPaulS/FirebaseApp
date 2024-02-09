@@ -13,7 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, 
   provideFirebaseApp(() => initializeApp(environment.firebase)),
-  provideFirestore(() => getFirestore())],
+  provideFirestore(() => getFirestore()),
+  provideFirebaseApp(() => initializeApp({"projectId":"ngbytes-fireauth-a77ba","appId":"1:700710575203:web:dc2f55c88dcb51c1d12c56","storageBucket":"ngbytes-fireauth-a77ba.appspot.com","apiKey":"AIzaSyCx9k_b0x6zWWMmSIMkSyD4ilnwgo2KelU","authDomain":"ngbytes-fireauth-a77ba.firebaseapp.com","messagingSenderId":"700710575203"}))],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

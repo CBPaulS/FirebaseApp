@@ -1,14 +1,17 @@
 
-<ion-content [fullscreen]="true">
-  <ion-button (click)="encender('LED1')" [color]="getColor(estadoled1)">encender</ion-button>
-  <ion-button (click)="apagar('LED1')" [color]="getColor(!estadoled1)">apagar</ion-button>
-  <br>
-  <ion-button (click)="encender2('LED2')" [color]="getColor(estadoled2)">encender</ion-button>
-  <ion-button (click)="apagar2('LED2')" [color]="getColor(!estadoled2)">apagar</ion-button>
-  <br>
-  <ion-button (click)="encender3('LED3')" [color]="getColor(estadoled3)">encender</ion-button>
-  <ion-button (click)="apagar3('LED3')" [color]="getColor(!estadoled3)">apagar</ion-button>
-  <br>
-  <ion-button (click)="encendertodas('LEDS')" [color]="getColor(estadoleds)">encender todas</ion-button>
-  <ion-button (click)="apagartodas('LEDS')" [color]="getColor(!estadoleds)">apagar todas</ion-button>
-</ion-content>
+<div class="bicho">
+  <ion-content [fullscreen]="true">
+    <ion-button (click)="encender('LED1')" [color]="getColor(estadoled1)">encender</ion-button>
+    <ion-button (click)="apagar('LED1')" [color]="getColor(!estadoled1)">apagar</ion-button>
+    <br>
+    <ion-button (click)="encender2('LED2')" [color]="getColor(estadoled2)">encender</ion-button>
+    <ion-button (click)="apagar2('LED2')" [color]="getColor(!estadoled2)">apagar</ion-button>
+    <br>
+    <ion-button (click)="encender3('LED3')" [color]="getColor(estadoled3)">encender</ion-button>
+    <ion-button (click)="apagar3('LED3')" [color]="getColor(!estadoled3)">apagar</ion-button>
+    <br>
+    <ion-button (click)="encendertodas()" [color]="getColor(estadoleds)">encender todas</ion-button>
+    <ion-button (click)="apagartodas()" [color]="getColor(!estadoleds)">apagar todas</ion-button>
+  </ion-content>
+</div>
+
